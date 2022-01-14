@@ -2,6 +2,7 @@ rm(list=ls()) # Clears workspace
 
 #system("sudo apt install librsvg2-dev libv8-dev -y") # Install linux dependency for rsvg 
 
+renv::restore() # Loads information about package dependencies
 
 PKG <- c("DiagrammeR","renv","rsvg", "DiagrammeRsvg")
 
@@ -11,7 +12,9 @@ for (p in PKG) {
     require(p,character.only = TRUE)}
 }
 rm(PKG,p)
-renv::snapshot()
+#renv::snapshot() # Saves information about package dependencies
+
+
 
 ## Graph
 
