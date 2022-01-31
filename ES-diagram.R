@@ -128,6 +128,7 @@ subgraph cluster_3 {
   k[label='Change in shoreline \n erosion']
   l[label='Change in oil spill risk']
   m[label='Change in landscape \n aesthetics/access']
+  mm[label='Change in rare species']
 }
  
 subgraph cluster_4 {
@@ -161,6 +162,7 @@ d:e -> l:w
 d:e -> m:w 
 e:e -> i:w
 f:e -> i:w
+f:e -> mm:w
 g:e -> l:w
 gg:e -> l:w
 i:e -> p:w
@@ -175,6 +177,7 @@ l:e -> p:w
 l:e -> q:w
 m:e -> o:w
 m:e -> p:w
+mm:e -> r:w
 }")
 
 ## Grouped desalination figure
