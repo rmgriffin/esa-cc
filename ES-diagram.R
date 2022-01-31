@@ -111,7 +111,6 @@ subgraph cluster_2 {
   b[label='Change in suspended \n sediment']
   c[label='Change in tidal \n hydrodynamics']
   d[label='Change in channel \n traffic']
-  e[label='Dredge disposal']
   f[label='Change in benthic \n geomorphology']
   g[label='Oil storage facility']
   gg[label='Pipelines']
@@ -122,7 +121,6 @@ subgraph cluster_3 {
   pencolor=transparent
   
   label = <<B>Change in Environmental Service   </B>> // https://stackoverflow.com/questions/56364683/how-can-i-size-table-nodes-in-graphviz-that-contain-bold-text
-  y[label='']
   i[label='Change in fish catch']
   j[label='Change in flooding']
   k[label='Change in shoreline \n erosion']
@@ -136,7 +134,6 @@ subgraph cluster_4 {
   pencolor=transparent
 
   label = <<B>Change in Value</B>>
-  x[label='']
   n[label='Change in commercial \n fishing net revenue']
   o[label='Change in property \n value']
   p[label='Change in recreation \n value']
@@ -148,7 +145,6 @@ subgraph cluster_4 {
 a:e -> b:w // ports and edges https://stackoverflow.com/questions/30260377/dot-language-with-concentrate-true-confusing-the-graph
 a:e -> c:w
 a:e -> d:w
-a:e -> e:w
 a:e -> f:w
 a:e -> g:w
 a:e -> gg:w
@@ -160,7 +156,6 @@ d:e -> j:w
 d:e -> k:w 
 d:e -> l:w 
 d:e -> m:w 
-e:e -> i:w
 f:e -> i:w
 f:e -> mm:w
 g:e -> l:w
